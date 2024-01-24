@@ -1,3 +1,4 @@
+/*
 function fibs(number) {
     if (number == 1) {
         return [0];
@@ -23,15 +24,17 @@ console.log(fibs(4));
 console.log(fibs(5));
 console.log(fibs(8));
 
+*/
+
 function fibsRec(number) {
     if (number == 1) {
-        return 0;
+        return [0];
     } else if (number == 2) {
-        return 1;
-    } else if (number < 1) {
-        return "This number doesn't work";
-    } else if (number >=3) { 
-        return fibsRec(number - 2) + fibsRec(number - 1);
+        return [0, 1];
+    } else if (number >= 3) {
+        let result = fibsRec(number - 1);
+        result.push(result[result.length - 1] + result[result.length - 2]);
+        return result;
     }
 }
 
