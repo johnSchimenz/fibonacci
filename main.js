@@ -26,6 +26,7 @@ console.log(fibs(8));
 
 */
 
+/*
 function fibsRec(number) {
     if (number == 1) {
         return [0];
@@ -47,3 +48,36 @@ console.log(fibsRec(5));
 console.log(fibsRec(6));
 console.log(fibsRec(7));
 console.log(fibsRec(8));
+*/
+
+let fire = [1, 2, 3, 4, 5];
+let ice = [1, 2, 3, 4];
+
+function mergeSort(array) {
+    if (array.length === 1) {
+        return array;
+    }
+    if (array.length % 2 === 0) {
+        
+        // Sort left side
+        let leftArray = array.slice(0, array.length / 2 - 1);
+        let sortedLeftArray = mergeSort(leftArray);
+
+        // Sort right side
+        let rightArray = array.slice(array.length / 2, array.length - 1);
+        let sortedRightArray = mergeSort(rightArray);
+
+        // Merge left and right sides
+        let newArray = sortedLeftArray.concat(sortedRightArray);
+        console.log(newArray);
+
+        return leftArray;
+    }
+    if (array.length % 2 === 1 && array.length !== 1) {
+
+    }
+
+}
+
+console.log(mergeSort([3, 2, 1, 13, 8, 5, 0, 1]));
+console.log(mergeSort([105, 79, 100, 110]));
