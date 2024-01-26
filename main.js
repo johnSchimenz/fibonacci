@@ -54,7 +54,7 @@ let fire = [1, 2, 3, 4, 5];
 let ice = [1, 2, 3, 4];
 
 function mergeSort(array) {
-    if (array.length === 1) {
+    if (array.length <= 1) {
         return array;
     }
     if (array.length % 2 === 0) {
@@ -64,14 +64,13 @@ function mergeSort(array) {
         let sortedLeftArray = mergeSort(leftArray);
 
         // Sort right side
-        let rightArray = array.slice(array.length / 2, array.length - 1);
+        let rightArray = array.slice(array.length / 2 - 1);
         let sortedRightArray = mergeSort(rightArray);
 
         // Merge left and right sides
-        let newArray = sortedLeftArray.concat(sortedRightArray);
-        console.log(newArray);
+        let newArray = leftArray + rightArray;
 
-        return leftArray;
+        return newArray;
     }
     if (array.length % 2 === 1 && array.length !== 1) {
 
