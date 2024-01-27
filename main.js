@@ -68,14 +68,25 @@ function mergeSort(array) {
         let sortedRightArray = mergeSort(rightArray);
 
         // Merge left and right sides
-        let newArray = leftArray + rightArray;
+        let newArray = leftArray.concat(rightArray);
 
         return newArray;
     }
     if (array.length % 2 === 1 && array.length !== 1) {
 
+            // Sort left side
+            let leftArray = array.slice(0, array.length / 2 - 1);
+            let sortedLeftArray = mergeSort(leftArray);
+    
+            // Sort right side
+            let rightArray = array.slice(array.length / 2 - 1);
+            let sortedRightArray = mergeSort(rightArray);
+    
+            // Merge left and right sides
+            let newArray = leftArray.concat(rightArray);
+    
+            return newArray;
     }
-
 }
 
 console.log(mergeSort([3, 2, 1, 13, 8, 5, 0, 1]));
