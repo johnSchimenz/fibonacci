@@ -15,15 +15,6 @@ function fibs(number) {
         return array;
     }
 }
-
-console.log(fibs(0));
-console.log(fibs(1));
-console.log(fibs(2));
-console.log(fibs(3));
-console.log(fibs(4));
-console.log(fibs(5));
-console.log(fibs(8));
-
 */
 
 /*
@@ -38,16 +29,6 @@ function fibsRec(number) {
         return result;
     }
 }
-
-console.log(fibsRec(0));
-console.log(fibsRec(1));
-console.log(fibsRec(2));
-console.log(fibsRec(3));
-console.log(fibsRec(4));
-console.log(fibsRec(5));
-console.log(fibsRec(6));
-console.log(fibsRec(7));
-console.log(fibsRec(8));
 */
 
 let fire = [1, 2, 3, 4, 5];
