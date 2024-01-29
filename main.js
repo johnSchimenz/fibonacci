@@ -31,6 +31,8 @@ function fibsRec(number) {
 }
 */
 
+
+// have to figure out what types the inputs are
 let fire = [1, 2, 3, 4, 5];
 let ice = [1, 2, 3, 4];
 
