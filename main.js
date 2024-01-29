@@ -40,6 +40,8 @@ function mergeSort(array) {
     if (array.length <= 1) {
         return array;
     }
+
+    // How can I make this so it fits both conditions (% 2 === 0 and % 2 === 1)
     if (array.length % 2 === 0) {
         
         // Sort left side
@@ -55,6 +57,7 @@ function mergeSort(array) {
 
         return newArray;
     }
+    /*
     if (array.length % 2 === 1 && array.length !== 1) {
 
             // Sort left side
@@ -70,6 +73,7 @@ function mergeSort(array) {
     
             return newArray;
     }
+    */
 }
 
 console.log(mergeSort([3, 2, 1, 13, 8, 5, 0, 1]));
