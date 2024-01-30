@@ -78,3 +78,4 @@ function mergeSort(array) {
 
 console.log(mergeSort([3, 2, 1, 13, 8, 5, 0, 1]));
 console.log(mergeSort([105, 79, 100, 110]));
+console.log(mergeSort([5, 9.6, 21, 21.2, 3.14]));
