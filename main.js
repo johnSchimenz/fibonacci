@@ -87,3 +87,4 @@ console.log(mergeSort(1000, 100, -20000, -2, -9, 5, 3.14));
 console.log(mergeSort(8, 9. -3, 4));
 console.log(mergeSort([7, 3.4, 5000]));
 console.log(mergeSort([-8, -20, -1]));
+console.log(mergeSort([-2, 9, -10]));
