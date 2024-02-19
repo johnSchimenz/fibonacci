@@ -95,3 +95,4 @@ console.log(mergeSort([9, -1, -3, 4]));
 console.log(mergeSort([6, -4, 5]));
 console.log(mergeSort(9, 0, 1000));
 console.log(mergeSort([2, 6, -8]));
+console.log(mergeSort[9, 2, -3, -1.1]);
