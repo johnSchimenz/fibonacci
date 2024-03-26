@@ -122,3 +122,4 @@ console.log(mergeSort([6, -9, 2]));
 console.log(mergeSort([-2, 3, 4]));
 console.log(mergeSort[5, -2 ,6]);
 console.log(mergeSort[5, 6, -2]);
+console.log(mergeSort([3, -6, 9]));
